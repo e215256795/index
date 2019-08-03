@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0
+}
+a{
+    text-decoration: none;
+    color:white
+}
+#u1{
+    height:80px;
+    width:1200px;
+   display: flex;
+  
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.search-area{
+    display: flex
+}
+.search .search-area .ipt {
+    width: 214px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 3px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.header-nav-left {
+    float: left;
+}
+.header-nav-right {
+    float: left;
+    margin-top: 42px;
+}
+.search .k-btn {
+    text-align: left;
+    width: 105px;
+    background-color: #21ade4;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    height: 43px;
+    line-height: 40px;
+    border: 0;
+    overflow: hidden;
+    border-radius: 0 3px 3px 0;
+}
+.search .k-btn img {
+    float: left;
+    margin-right: 10px;
+    width: 27px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ipt-area-left {
+    float: left;
+}
+.ipt-erea-right {
+    float: left;
+}
+
+#u3{
+    height: 50px;
+    background: #00000087
+}
+.i1{
+    width:1200px;
+    height:50px;
+    margin:0 auto;
+    display: flex;
+    color: white
+}
+.i1>div{
+    height:48px;
+    width:85px;
+   
+    text-align: center;
+    line-height: 48px
+}
+.i3{
+    background: #0000003b
+}
+#er{
+    margin-top: 30px
+}
+#u4{
+    width:1200px;
+    height: 300px;
+    margin:0 auto;
+    position: relative;
+    background-image: url("http://127.0.0.1:3000/img/photo6.jpg");
+    background-size:1200px 300px;
+    background: blanchedalmond;
+}
+.i4{
+    height:300px;
+    width:1200px;
+    background-color: black;
+    opacity: 0.80;
+    position:absolute;
+}
+.i5{
+  position: absolute;
+  width:100%;
+  height:300px;
+ top:0;
+ left:0;
+
+
+}
+.i9{
+    margin-left: 15px
+}
+.i6{
+    position: absolute;
+    display: flex;
+    top:0;
+    left:0;
+    width:100%;
+    height:300px;
+    padding:15px;
+}
+#u5>img{
+    height:266px;
+    width:213px;
+}
+.i7{
+    font-size: 20px;
+    margin-left:20px
+}
+.i8{
+    display: flex
+}
+.i7 div{
+    color:white;
+    font-size: 15px;
+    line-height: 30px
+}
+
+.center{
+    margin: 0 auto;
+    width:1200px
+}
+
+.center .row .col7 .tab-comment .tab-c {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.container .center .user-revirws .tab-c {
+    padding-left: 0;
+}
+.tab-comment .tab-c {
+    padding: 25px 0 20px 40px;
+    border: 1px solid #eaeaea;
+    border-top: 0;
+}
+.col7, .tab-comment .tab-c {
+    overflow: visible;
+}
+.show {
+    display: block;
+}
+
+.user-revirws .nrpart .kf-on {
+    overflow: hidden;
+}
+.user-revirws .nrpart .kf-on, .user-revirws .tc-on {
+    background-color: #fff;
+}
+.user-revirws .tc-revirws .tit {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.user-revirws .tc-revirws .tit h3 {
+    float: left;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+.user-revirws .nrpart .kf-border {
+    clear: both;
+    margin-bottom: 25px;
+    border: 1px solid #c6eeff;
+    overflow: hidden;
+}
+.user-customer {
+    float: left;
+    width: 210px;
+    overflow: hidden;
+}
+.user-customer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*img {*/
+    /*vertical-align: top;*/
+    /*border: 0;*/
+/*}*/
+.user-customer .face {
+    float: left;
+    width: 50px;
+    margin-right: 20px;
+}
+.user-customer .user-info {
+    float: left;
+    width: 120px;
+    height: 70px;
+    color: #333;
+    overflow: hidden;
+}
+.user-revirws .nrpart .kf-border .tc-revirws .user-cmt:last-child {
+    border-bottom: none;
+}
+.user-revirws .nrpart .user-cmt:first-child {
+    padding-top: 30px;
+}
+.user-customer .user-info .name {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.user-customer .user-info .id-lb {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 70px;
+    height: 20px;
+    line-height: 19px;
+    background-color: #ff6d6f;
+    border-radius: 1px;
+    overflow: hidden;
+}
+.tab-comment .nrpart .user-cmt .text {
+    overflow: hidden;
+}
+.tab-comment .nrpart .user-cmt .text .cmt-detail {
+    max-height: 72px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.tab-comment .nrpart .user-cmt .text .show-more {
+    display: none;
+    float: right;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.tab-comment .nrpart .user-cmt .text .cmt-opt {
+    clear: both;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.tab-comment .nrpart .user-cmt .text .cmt-opt .date {
+    float: left;
+    color: #888;
+    font-size: 12px;
+}
+.tab-comment .opt-zan {
+    float: right;
+    overflow: hidden;
+}
+.tab-comment .opt-zan .ico-opt-zan {
+    float: right;
+    cursor: pointer;
+    color: #888;
+    line-height: 14px;
+    margin-top: 3px;
+    padding-left: 20px;
+    background: url(../images/ico-opt-on.png) no-repeat;
+}
+.user-revirws .user-dp {
+    float: right;
+    color: #888;
+    padding-right: 10px;
+}
+.user-cmt.user-on {
+    padding: 20px;
+}
+.user-revirws .nrpart .kf-on {
+    overflow: hidden;
+}
+.user-revirws .nrpart .kf-revirws {
+    width: 940px;
+    margin-left:15px;
+    display: block;
+    font-size: 14px;
+}
+.user-revirws .nrpart .kf-revirws .evaluation-list {
+    border-bottom: 1px solid #ddd;
+}
+.user-revirws .nrpart .kf-revirws .evaluation-list ul {
+    clear: both;
+    width: 950px;
+    height: 30px;
+    margin: 25px 0;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.user-revirws .nrpart .kf-revirws .evaluation-list li {
+    float: left;
+    text-align: center;
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 70px;
+    border: 1px solid #ddd;
+}
+.user-revirws .nrpart .kf-revirws .evaluation-list li a {
+    display: block;
+    margin: 0 auto;
+    color: #333;
+    padding-bottom: 14px;
+    text-decoration: none;
+}
+.user-cmt.user-on {
+    background: #fafafa;
+}
+.evaluation-on .active {
+    height: 28px;
+    color: #0074c1;
+    border: none;
+    border: 1px solid #0074c1;
+}
+/*用户评价*/
+.user-customer {
+    float: left;
+    width: 210px;
+    overflow: hidden;
+}
+.tab-comment .nrpart .user-cmt {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+    font-size: 14px;
+    background-color: #fff;
+}
+/*页码*/
+.tab-comment .page {
+    text-align: center;
+    padding-top: 30px;
+}
+.tab-comment .page span.disabled, .tab-comment .page span.disabled:hover {
+    cursor: not-allowed;
+    color: #333;
+    background: 0 0;
+    border-color: #eaeaea;
+}
+.tab-comment .page .next, .tab-comment .page .prev {
+    display: inline-block;
+    width: 98px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 8px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+}
+.tab-comment .page .page-tips {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.user-revirws .nrpart .kf-revirws .sentences .cmt-mod-h {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.user-revirws .nrpart .kf-revirws .sentences .cmt-mod-h h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-cmd {
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 26px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-cmd .user-cmd-img {
+    float: left;
+    line-height: 22px;
+    margin-right: 30px;
+}
+.user-cmt-list li {
+    float: left;
+    width: 75px;
+    line-height: 25px;
+    margin-right: 40px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .cmt-mod .user-cmt-list li .user-ico {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.ico-better-on {
+    background: url(../images/ico-better-on.png) no-repeat;
+    background-size: 25px 25px;
+}
+.ico-good {
+    background: url(../images/ico-good.png) no-repeat;
+    background-size: 25px 25px;
+}
+.ico-bad {
+    background: url(../images/ico-bad.png) no-repeat;
+    background-size: 25px 25px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-writing {
+    height: 177px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-writing .user-cmd-img {
+    float: left;
+    margin-right: 23px;
+    line-height: 25px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-writing .ipt {
+    width: 790px;
+    height: 160px;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    line-height: 33px;
+    padding: 13px 0 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ipt {
+    float: left;
+    color: #b7b7b7;
+    width: 366px;
+    height: 35px;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    background: #fff;
+    overflow: hidden;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-uploading {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-h {
+    float: left;
+}
+.upload-area {
+    padding-left: 20px;
+    overflow: hidden;
+}
+.upload-area .btn-area {
+    clear: both;
+    overflow: hidden;
+}
+
+.btn-area {
+    text-align: center;
+}
+.user-uploading .input-file {
+    display: none;
+}
+.user-uploading .input-choose-file {
+    display: block;
+    width: 78px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #48b3e2;
+    border-radius: 3px;
+    text-align: center;
+    color: #48b3e2;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-uploading .user-uploading-m {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-id {
+    clear: both;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-h {
+    float: left;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-id .user-id-list {
+    overflow: hidden;
+    float: left;
+    margin-left: 15px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-id .user-id-list .user-chk .ico-chk {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url(../images/ico-chk.png) no-repeat;
+    background-size: 20px 20px;
+    margin-right: 20px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-id .user-id-list .user-chk {
+    margin-right: 40px;
+}
+.user-revirws .nrpart .kf-revirws .sentences .user-id .user-id-list li {
+    float: left;
+}
+.user-revirws .nrpart .kf-revirws .user-submit {
+    margin: 0 auto;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ff6d6f;
+    color: #fff;
+    margin-top: 34px;
+}
+/*右侧*/
+/*带看点评*/
+.user-revirws .nrpart-p {
+    padding-left: 40px;
+}
+.kf-record .tit {
+    padding-bottom: 10px;
+}
+.kf-record .tit h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+.kf-record .tit h3 em {
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 10px;
+}
+em {
+    font-style: none;
+}
+.kf-record .look-comment-info {
+    margin-right: 30px;
+}
+.look-comment-info {
+    float: right;
+    font-size: 16px;
+    color: #666;
+}
+.look-comment-info .red {
+    color: #ff6d6f;
+}
+
+.dk-item {
+    clear: both;
+    font-size: 14px;
+    overflow: hidden;
+    display: table;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+.dk-item-detail {
+    float: left;
+    width: 720px;
+    margin-right: 30px;
+    overflow: hidden;
+}
+.brand-comment .dk-item .dk-info {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+.dk-item .dk-info {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 3px;
+}
+.dk-info, .dk-item, .dk-pj {
+    clear: both;
+    font-size: 14px;
+    overflow: hidden;
+}
+.brand-comment .dk-info li {
+    margin-right: 30px;
+    float: left;
+}
+.dk-info .c-name {
+    margin-right: 40px;
+}
+.dk-info .c-name, .dk-info .date, .dk-info .dkpj {
+    overflow: hidden;
+}
+.dk-item-detail .red, .fwzxs .red, .look-comment-info .red {
+    color: #ff6d6f;
+}
+.dk-pj {
+    line-height: 26px;
+}
+.dk-pj p {
+    height: 104px;
+    color: #666;
+    overflow: hidden;
+}
+.housing-process a {
+    color: #2badd7;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 18px;
+}
+/*右侧*/
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #f16668;
+}
+.cmt-hot-words{
+    list-style: none
+}
+.evaluation-on:hover{
+    background: #0074c1;
+    color:#fff
+}
+#u2{height: 56px;
+    width: 223px;
+    background-image: url(./img/biao.jpg);
+    background-size: 103%;
+    background-repeat: no-repeat;
+    
+}
+.i1>div:hover{
+    color:black
+}
+[v-cloak]{
+    display: none
+}

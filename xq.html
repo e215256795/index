@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./xq.css">
+    <script src='./js/vue.js'></script>
+
+    <style>
+       
+    </style>
+</head>
+<body>
+     <div id="u1">
+            <div id="u2">
+   
+                </div>
+        <div class="search">
+            <div class="search-area">
+                <div class="ipt-area-left">
+                    <input type="text" name="query" class="ipt" placeholder="搜你感兴趣的知识" value="">
+                </div>
+                <div class="ipt-erea-right">
+                    <button type="button" id="info-search-btn" class="k-btn">
+                        <img src="images/bg-icon-search.png" alt="">搜 索</button>
+                </div>
+            </div>
+        </div>
+       
+     </div>
+     <div id="u3">
+         <div class="i1" >
+            <div></div>
+            <div>
+                <a href="./index.html">  首页</a>
+              </div>
+            <div >
+                <a href="./detail.html?lid=1">影院</a>
+                </div>
+            <div class="i2">影片</div>
+            <div>票房</div>
+           <div id="tou">
+               
+           </div>
+         </div>
+     </div>
+     <!-- 热映电影 -->
+     <div id="u4">
+             <div class="three">
+                 <div class="three0">
+                  <div class="three1">热映影片</div>
+                  <div class="three2">即将上映</div>
+                  <div class="three3">影片库</div>
+                 </div>
+             </div>
+     </div> 
+     <!-- 电影详情 -->
+     <div id="el" v-cloak>
+        <div id="u5">
+                <div  v-for="(item,i) of result1" :key="i" id="vif">
+                                <span>{{item.date}}</span>
+                                <span>{{item.week}}</span>
+                        <div id="flex"> 
+                                <div id="u6">
+                                    <a href="">
+                                            <img :src="item.photo"alt="">
+                                    </a>
+                                
+                                </div>
+                                <div id="u7">
+                                    <span>{{item.lei}}</span>
+                                    <div class="love">
+                                        {{item.love}}人想看
+                                    </div>  
+                                    <div class="ping">
+                                        <span>{{item.ping}}</span>
+                                        <span>{{item.lun}}</span>
+                                    <div id="tan"> 
+                                        <div class="lei">
+                                            类型:{{item.lei}}
+                                        </div>
+                                    
+                                        <div class="fen">
+                                            时长 :{{item.time}}分钟
+                                        </div>
+                                        <div class="mount">
+                                            上映时间：{{item.date}}
+                                        </div>
+                                    </div> 
+                                    </div>
+                                </div>
+                                <div id="xuan" @click="aa">
+                               
+                                        <span> 选座购票</span>
+                                    
+                                   
+                                    
+                                </div>
+                                
+                    </div>
+                   
+              </div>    
+              <div id="dh"  > 
+                  <h3>当日票房排行榜</h3>
+                <div v-for="(ab,i) of result" :key="i" >
+                    <div class="dh1">
+                        <span>{{ab.uid}}</span>
+                        <div>{{ab.uname}}</div>
+                        <div></div>   
+                    </div>
+                        <img :src="ab.photo" alt="" class="dh2">
+                    </div>  
+              </div> 
+                    
+        </div> 
+       
+    </div>   
+</body>
+<script src="./js/jquery-1.11.3.js"></script>
+<script src="./xq.js"></script>
+</html>

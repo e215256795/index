@@ -1,0 +1,19 @@
+Vue.component('todo',{
+    template:`
+    <div> 
+    <h1>代办事项列表</h1>
+    <todo-add></todo-add>
+    <todo-list></todo-list>
+    </div>
+    `,
+    data(){
+        return{
+            tasks:['吃饭','睡觉','大亮亮']
+        }
+       
+        },
+        components:{
+            todoAdd,
+            todoList
+    }
+})

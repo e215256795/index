@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='./js/vue.js'></script>
+    <script src="./js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="./detail.css">
+</head>
+<body>
+  <div id="u1">
+    <div id="u2">
+        
+        </div>
+<div class="search">
+    <div class="search-area">
+        <div class="ipt-area-left">
+            <input type="text" name="query" class="ipt" placeholder="搜你感兴趣的知识" value="">
+        </div>
+        <div class="ipt-erea-right">
+            <button type="button" id="info-search-btn" class="k-btn">
+                <img src="images/bg-icon-search.png" alt="">搜 索</button>
+        </div>
+    </div>
+</div> 
+</div>
+ <!-- / -->
+ <div id="u3">
+  <div class="i1" >
+     <div></div>
+     <div>
+       <a href="./index.html">首页</a>
+       
+      </div>
+     <div class="i3" >影院</div>
+     <div class="i2">
+      <a href="./xq.html">影片</a> 
+      </div>
+     <div>票房</div>
+  
+  </div>
+</div>
+
+<!-- 电影 -->
+<div id="er" v-cloak>
+     <div id="u4">
+        <div class="i4"></div>
+        <div class="i5">
+            <div class="i6">
+                <div id="u5">
+                    <img :src="result.photo" alt="">
+                </div>
+
+                <div class="i7">
+                  <div>
+                      <h3>{{result.title}}</h3>
+
+                  </div>
+                  <div class="i8">
+                    <div>导演: {{result.dao}}</div>
+                    <div class="i9">主演:{{result.zhu}}</div>
+                   
+
+                  </div>
+                  <div>{{result.form}}</div>
+                  <div>{{result.mount}}</div>
+                  <div>{{result.ju}}</div>
+                
+
+                </div>
+              </div>
+        </div>
+        
+     </div>
+     <!--点评-->
+     <div class="center">
+        <div class="row">
+            <div class="col7">
+                <!--成交评论-->
+                <div class="tab tab-comment user-revirws">
+                    <!--小导航条-->
+                   
+                    <!--点评-->
+
+                    <div class="tab-c">
+                        <div class="nrpart show">
+                            <div class="kf-revirws kf-on">
+                                <div class="tc-revirws tc-on">
+                                    <div class="tit">
+                                        <h3>大家都赞的点评</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kf-revirws kf-border">
+                                <div class="tc-revirws">
+                                    <div class="user-cmt user-on">
+                                        <div class="user-customer">
+                                            <div class="face">
+                                                <img src="img/ren.jpg" alt="">
+                                            </div>
+                                            <div class="user-info">
+                                                <h4 class="name" title="heng万里">heng万里</h4>
+                                                <span class="id-lb id-yz">最佳评论</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <div class="cmt-detail">
+                                                <p>在我们每一个人的内心深处，都藏著一个人，每次想起他的时候，会觉得有一点点心痛，但我们依然愿意把他留在心底，就算今天，我们不知道他在那里，他在做些甚麽，但至少知道，是他让我们了解，甚麽是初恋这件小事!</p>
+                                            </div>
+                                            <div class="show-more">
+                                                <span class="ico-showmore">
+                                                    <a href="javascript:void(0)">查看全文</a>
+                                                </span>
+                                            </div>
+                                            <div class="cmt-opt">
+                                                <div class="date">2017年01月03日</div>
+                                                <div class="opt-zan " data-comment-id="21090" data-user-id="0">
+                                                    <span class="ico-opt-zan">赞 24</span>
+                                                    <div class="user-dp">大家都赞的点评</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="kf-revirws kf-on">
+                                <div class="tc-revirws tc-on">
+                                    <div class="evaluation-list">
+                                        <ul class="cmt-hot-words">
+                                            <li class="evaluation-on">
+                                                <a href="javascript:void(0)" class="active">全部(59)</a>
+                                            </li>
+                                            <li class="evaluation-on">
+                                                <a href="javascript:void(0)">有图(2)</a>
+                                            </li>
+                                            <li class="evaluation-on">
+                                                <a href="javascript:void(0)">好评(35)</a>
+                                            </li>
+                                            <li class="evaluation-on">
+                                                <a href="javascript:void(0)">中评(15)</a>
+                                            </li>
+                                            <li class="evaluation-on">
+                                                <a href="javascript:void(0)">差评(3)</a>
+                                            </li>
+                                          </ul>
+                                    </div>
+
+                                <!--普通用户评价-->
+                                    <div id="clickti">
+                                        <div class="user-cmt">
+                                            <div class="user-customer">
+                                                <div class="face">
+                                                    <img src="img/ren.jpg" alt="">
+                                                </div>
+                                                <div class="user-info">
+                                                    <h4 class="name" title="居理网友46956">网友46945</h4>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <div class="cmt-detail">
+                                                    <p>片中一些绿叶角色的发挥一样让本片增添不少分数，英语老师的搞笑作死，小水闺密们的各种逗比行为，一点一滴的让观众甚至忘了这是一部爱情电影，可能也是部喜剧呢?</p>
+                                                </div>
+                                                <div class="show-more">
+                                                        <span class="ico-showmore">
+                                                            <a href="javascript:void(0)">查看全文</a>
+                                                        </span>
+                                                </div>
+
+                                                <div class="cmt-opt">
+                                                    <div class="date">2019年07月04日</div>
+                                                    <div class="opt-zan " data-comment-id="146956" data-user-id="0">
+                                                        <span class="ico-opt-zan">赞 2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-cmt">
+                                            <div class="user-customer">
+                                                <div class="face">
+                                                    <img src="img/ren.jpg" alt="">
+                                                </div>
+                                                <div class="user-info">
+                                                    <h4 class="name" title="居理网友46956">网友46956</h4>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <div class="cmt-detail">
+                                                    <p>如果青春期的爱恋故事注定要在悔恨中各自疗癒成长，那麽也愿这种唤作成熟必经之路的过往曾经能让我们都变成更优秀的人，各自在不同的地方默默等待著上天的安排，让更适合我们的人出现，在这之前我们能做的就只是等待，然后.....想办法变得更好!</p>
+                                                </div>
+                                                <div class="show-more">
+                                                        <span class="ico-showmore">
+                                                            <a href="javascript:void(0)">查看全文</a>
+                                                        </span>
+                                                </div>
+
+                                                <div class="cmt-opt">
+                                                    <div class="date">2019年07月04日</div>
+                                                    <div class="opt-zan " data-comment-id="146956" data-user-id="0">
+                                                        <span class="ico-opt-zan">赞 18</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-cmt">
+                                            <div class="user-customer">
+                                                <div class="face">
+                                                    <img src="img/ren.jpg" alt="">
+                                                </div>
+                                                <div class="user-info">
+                                                    <h4 class="name" title="居理网友46956">网友46956</h4>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <div class="cmt-detail">
+                                                    <p>片中的许多小场景，话剧社裡王子与灰姑娘的排演，小水与阿拓阿亮学长去旅行的风景，小水对阿亮学长表白的那幕，那些对白再平凡不过，甚至你我都曾经说出口过，但藉由片中主人翁的演绎方式表现出来，总是那麽的温暖与撼动著我。</p>
+                                                </div>
+                                                <div class="show-more">
+                                                        <span class="ico-showmore">
+                                                            <a href="javascript:void(0)">查看全文</a>
+                                                        </span>
+                                                </div>
+
+                                                <div class="cmt-opt">
+                                                    <div class="date">2019年07月04日</div>
+                                                    <div class="opt-zan " data-comment-id="146956" data-user-id="0">
+                                                        <span class="ico-opt-zan">赞 9</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-cmt">
+                                            <div class="user-customer">
+                                                <div class="face">
+                                                    <img src="img/ren.jpg" alt="">
+                                                </div>
+                                                <div class="user-info">
+                                                    <h4 class="name" title="居理网友46956">机智网友46956</h4>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <div class="cmt-detail">
+                                                    <p>
+                                                        
+                                                        面对人类文明的「蝇王」式困境，黄渤的《一出好戏》讲得还算温和。北野武的《大逃杀》则要极端很多，在资源有限的空间中，杀戮成为生存的唯一信念。</p>
+                                                </div>
+                                                <div class="show-more">
+                                                        <span class="ico-showmore">
+                                                            <a href="javascript:void(0)">查看全文</a>
+                                                        </span>
+                                                </div>
+
+                                                <div class="cmt-opt">
+                                                    <div class="date">2019年07月04日</div>
+                                                    <div class="opt-zan " data-comment-id="146956" data-user-id="0">
+                                                        <span class="ico-opt-zan">赞 12</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        
+                                    </div>
+
+                                    <!-- 用户写点评部分 Start -->
+                                    <div id="zft-anchor-user-comment" class="sentences">
+                                        <input type="hidden" id="project_id" value="">
+                                        <input type="hidden" id="write" value="">
+                                        <input type="hidden" id="commentList" value="">
+                                        <input type="hidden" id="upload" value="">
+                                        <div class="cmt-mod-h">
+                                            <h3>我来说两句</h3>
+                                        </div>
+                                        <div class="cmt-mod user-cmd">
+                                            <div class="user-cmd-img">
+                                                <div class="user-h">您对影片的评价：</div>
+                                            </div>
+                                            <ul class="user-cmt-list">
+                                                <li class="user-chk user-chk-on">
+                                                    <span class="user-ico ico-better ico-better-on"></span>
+                                                    <span class="txt">好评</span>
+                                                    <input type="hidden" value="5" data-id="user-cmt">
+                                                </li>
+                                                <li class="user-chk">
+                                                    <span class="user-ico ico-good"></span>
+                                                    <span class="txt">中评</span>
+                                                    <input type="hidden" value="3" data-id="user-cmt">
+                                                </li>
+                                                <li class="user-chk">
+                                                    <span class="user-ico ico-bad"></span>
+                                                    <span class="txt">差评</span>
+                                                    <input type="hidden" value="1" data-id="user-cmt">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cmt-mod user-writing">
+                                            <div class="user-cmd-img">
+                                                <div class="user-h">评价：</div>
+                                            </div>
+                                            <textarea class="ipt" style="overflow-y: scroll;" placeholder="关于这部电影,有什么想说的呢~"></textarea>
+                                        </div>
+                                        <div class="cmt-tips writing-tips" style="display: none;"></div>
+                                        <div class="user-uploading">
+                                            <div class="user-h">上传图片：</div>
+                                            <div class="upload-area">
+                                                <ul class="up-pic-list"></ul>
+                                                <div class="btn-area">
+                                                   <!-- <a href="javascript:void(0)">
+                                                        <input type="file" class="a-upload">
+                                                    </a>-->
+                                                    <input type="file" class="input-file" name="imgs">
+                                                    <span class="input-choose-file" style="cursor: pointer;">选择文件</span>
+                                                    <div class="user-uploading-m">最多上传9张图片，大小不超过10M</div>
+                                                    <input type="hidden" value="" id="img_list">
+                                                </div>
+                                                <div class="cmt-tips upload-tips" style="display: none;"></div>
+                                            </div>
+                                        </div>
+
+                                      
+                                     
+                                    </div>
+                           
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+        
+    </div>
+
+</div>
+
+</div>    
+
+  
+      
+    
+            
+</body>
+<script>
+   
+
+
+
+            (function(){
+                //向localhost:3000/index发送请求，获得数据
+                     
+        if(location.search!==""){
+            //获得地址栏中的?lid=2中的2
+            var lid=
+              location.search.split("=")[1]
+            console.log(lid);}
+
+                $.ajax({
+                  url:"http://127.0.0.1:3000/details",
+                  type:"get",//请求类型
+                  //无请求参数
+                  data:{lid},
+                  dataType:"json"//返回值类型
+                })//.then中的函数会在请求结束后，自动执行
+                //        open(result)
+                //               ↓
+                .then(function(result){
+                 console.log(result);
+             
+                  //先取出结果数组中第一个商品
+                  new Vue({
+                    el:'#er',
+                    data:{
+                    result:result[0],
+
+                    },
+                    methods:{
+               
+                    }
+                    
+                  })
+                 
+                  
+              
+                })
+            
+              })()
+
+            
+            
+</script>
+
+</html>

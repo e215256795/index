@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none
+        }
+       p{margin:0;padding:0;
+        font-size: 5px
+   } 
+
+   #flox, #flax, #flex{
+           display: flex;
+           margin-top:20px
+       }
+  #mima, #shouji,#yonghu{
+  display: none;
+   margin-left: 15px;
+  }
+        
+     div   input{
+            height:30px;
+            width: 250px;
+            margin-left:10px
+         
+        }
+        #mima{
+            background: #ddd;
+            margin-left: 15px;
+            padding-left:15px;
+            padding-right: 15px
+        }
+        .but{
+            width:200px;
+            height:50px;
+            background-color: #ff7975;
+            color:#fff
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <span>我已注册,现在就登录</span> <a href="denglu.html">登录</a> <br/>
+        <div>
+                <div id="flex">
+            用户名  <input type="text" name="ab" placeholder="请输入用户名" > <br/>
+            <div id="yonghu">
+                    <p >设置后不可更改</p>
+                    <p>中英文均可,最长14个英文或7个汉字</p>
+            </div>
+           
+            </div>
+    <div id="flax">
+        手机号  <input type="text" placeholder="可用于登录和找回密码" name="ab"> <br/>
+        <p id="shouji">请输入中国大陆手机号,其他用户不可看见</p>
+    </div>
+       <div id="flox">
+        密码<input type="password" placeholder="请设置登录密码" name="ab"> <br/>
+        <!--      验证码<input type="text" placeholder="请输入验证码"> <br/>-->
+         <div id="mima">
+             <p>长度为8~14个字符</p>
+             <p>支持数字,大小写字母和标点符号</p>
+             <p>不允许有空格</p>
+
+         </div>
+        </div> 
+    </div>
+
+    <input type="checkbox" class="check">阅读并接受
+    <a href=""  >
+         <span>《百度用户协议》</span> 
+        </a> 
+        <span>及</span>
+        <a href=""> 
+            <span>   《百度隐私权保护声明》</span>
+         
+            
+    </a>
+
+    <button class="but" id="btn">注册</button>
+   <script>
+        var  ming=document.getElementsByName("ab")
+        var  tishi=document.getElementById("yonghu")
+        var  shouji=document.getElementById("shouji")
+        var  mima=document.getElementById("mima")
+        //获取焦点
+        ming[0].onfocus=function(){
+             tishi.style.display="block";
+           ming[0].style.borderColor="#ff7975"
+        }
+        //onblur 失去焦点
+        ming[0].onblur=function(){
+         tishi.style.display="none";
+      
+  
+     }
+     ming[1].onfocus=function(){
+      shouji.style.display="block";
+     }
+     ming[1].onblur=function(){
+      shouji.style.display="none";
+  }
+  ming[2].onfocus=function(){
+      mima.style.display="block";
+     }
+   ming[2].onblur=function(){
+      mima.style.display="none";}
+  
+      var  ming=document.getElementsByName("ab")
+    
+   
+   btn.onclick=function(){
+    var  uname=ming[0].value;
+    console.log(uname)
+    var  pass=ming[1].value;
+    console.log(pass)
+    var  upwd=ming[2].value;
+    console.log(upwd)
+    var xhr=new XMLHttpRequest();
+    xhr.onreadystatechange=function(){
+      //这个监听会被调用4次，第4次是我们需要的,使用if把第4次筛选出来
+      if(xhr.readyState==4&&xhr.status==200){
+          //只有在readystate为4，响应传输完整
+          //status是响应状态码，为200，是响应成功
+          var result=JSON.parse(xhr.responseText);
+          console.log(result);
+      
+      }
+  }
+  //2.创建请求,打开连接
+  xhr.open("get","http://127.0.0.1:3000/reg?uname="+uname+"&upwd="+upwd+"&pass="+pass,true);
+  //3.发送请求
+  xhr.send(null);
+  
+   }
+  
+
+
+   </script>
+  
+</body>
+</html>

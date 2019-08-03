@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='./js/vue.js'></script>
+    <script src="./js/jquery-1.11.3.js"></script>
+</head>
+<body>
+  <div id="el">
+    <div>
+      <input type="checkbox">全选
+   </div>
+        <div>
+        <input type="checkbox">
+        <img src="" alt="">
+                <div>
+                <span></span>
+                </div>
+        </div>
+        <button>删除</button>
+
+        <div>
+        <button>删除选中的商品</button>
+        <h3>
+            购物车数量: <span></span>
+        </h3>
+    </div>  
+
+        </div>
+    <script>
+    new Vue({
+        el:'#el',
+        data:{
+            list:[]
+        },
+     
+       created(){
+        $.ajax({
+            url:"http://localhost:3000/cart",
+            type:"get",//请求类型
+            //无请求参数
+            dataType:"json"//返回值类型
+          })//.then中的函数会在请求结束后，自动执行
+          //        open(result)
+          //               ↓
+          .then(function(result){
+            console.log(result);
+       })
+    }
+    
+        
+    })    
+                
+
+    </script>
+
+</body>
+</html>

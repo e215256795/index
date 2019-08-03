@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+全选<input type="checkbox" id="qq" onclick="q1()"><br/>
+1<input type="checkbox" name="nn" ><br/>
+2<input type="checkbox" name="nn"><br/>
+3<input type="checkbox" name="nn"><br/>
+4<input type="checkbox" name="nn">
+   
+    <script>
+var qqc=document.getElementById("qq");
+
+var ob=document.getElementsByName("nn");
+console.log(qqc.checked)
+function q1(){
+if(qqc.checked==true){
+    for(var i=0;i<ob.length;i++){
+        ob[i].checked=true
+        console.log(ob[i].checked)
+    }
+}else{
+    for(var i=0;i<ob.length;i++){
+        ob[i].checked=false
+    }
+}}
+    </script>
+</body>
+</html>
